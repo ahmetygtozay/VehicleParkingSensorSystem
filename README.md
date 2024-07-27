@@ -4,21 +4,21 @@
 This project demonstrates a vehicle parking sensor simulation using an Arduino Mega, an ultrasonic distance sensor, and an LCD display. The system simulates a parking sensor that detects the distance between the vehicle and an obstacle using an ultrasonic sensor. The distance is displayed on an LCD screen, and an alarm system is implemented to provide audio and visual warnings when the vehicle is too close to an obstacle.
 
 ## Features
-->Ultrasonic Distance Measurement: Measures the distance between the sensor and the obstacle using an ultrasonic sensor.
-->LCD Display: Shows the measured distance in centimeters on a 16x2 LCD display.
-->LCD Display: Shows the measured distance in centimeters on a 16x2 LCD display.
-->Warning System: Uses a buzzer and LED indicators to provide warnings based on distance:
-->Green LED: Indicates safe distance (more than 80 cm).
-->Red LED: Lights up when the vehicle is too close (less than 80 cm).
-->Buzzer: Emits sound to alert the driver when the distance is less than 80 cm.
+->Ultrasonic Distance Measurement: Measures the distance between the sensor and the obstacle using an ultrasonic sensor.<br>
+->LCD Display: Shows the measured distance in centimeters on a 16x2 LCD display.<br>
+->LCD Display: Shows the measured distance in centimeters on a 16x2 LCD display.<br>
+Warning System: Uses a buzzer and LED indicators to provide warnings based on distance:<br>
+->Green LED: Indicates safe distance (more than 80 cm).<br>
+->Red LED: Lights up when the vehicle is too close (less than 80 cm).<br>
+->Buzzer: Emits sound to alert the driver when the distance is less than 80 cm.<br>
 
 ## Components
 Arduino Mega 2560<br>
-Ultrasonic Distance Sensor (HC-SR04)
-16x2 LCD Display (I2C)
-Buzzer
-LEDs (Red and Green)
-Resistors and Breadboard
+Ultrasonic Distance Sensor (HC-SR04)<br>
+16x2 LCD Display (I2C)<br>
+Buzzer<br>
+LEDs (Red and Green)<br>
+Resistors and Breadboard<br>
 
 ### Installation
 Wiring:
