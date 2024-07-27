@@ -13,7 +13,7 @@ This project demonstrates a vehicle parking sensor simulation using an Arduino M
 ->Buzzer: Emits sound to alert the driver when the distance is less than 80 cm.
 
 ## Components
-Arduino Mega 2560
+Arduino Mega 2560<br>
 Ultrasonic Distance Sensor (HC-SR04)
 16x2 LCD Display (I2C)
 Buzzer
