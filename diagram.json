@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "author": "ahmet yiğit",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 0.6, "left": -3.6, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -142.5,
+      "left": -23.3,
+      "attrs": { "distance": "54" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -122.4,
+      "left": 184.2,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -90,
+      "left": 282.2,
+      "attrs": { "color": "limegreen" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -99.6,
+      "left": 378.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -24.85,
+      "left": 240,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -24.85,
+      "left": 326.4,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -12.8,
+      "left": 447.2,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "ultrasonic1:GND", "mega:GND.2", "black", [ "v0" ] ],
+    [ "mega:GND.1", "led1:C", "black", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "mega:5V", "red", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "mega:2", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "mega:3", "green", [ "v0" ] ],
+    [ "bz1:2", "mega:4", "green", [ "v0" ] ],
+    [ "led1:A", "r1:2", "green", [ "v0" ] ],
+    [ "r1:1", "mega:5", "green", [ "v0" ] ],
+    [ "led2:A", "r2:2", "green", [ "v0" ] ],
+    [ "r2:1", "mega:6", "green", [ "v0" ] ],
+    [ "led1:C", "mega:GND.3", "green", [ "v0" ] ],
+    [ "led2:C", "mega:GND.2", "green", [ "v0" ] ],
+    [ "bz1:1", "mega:GND.2", "green", [ "v0" ] ],
+    [ "lcd1:VCC", "mega:5V", "red", [ "h0" ] ],
+    [ "lcd1:GND", "mega:GND.1", "black", [ "h0" ] ],
+    [ "lcd1:SDA", "mega:20", "green", [ "h0" ] ],
+    [ "mega:21", "lcd1:SCL", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
